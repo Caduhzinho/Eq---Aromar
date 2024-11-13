@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMAR</title>
+
+    <!-- Importando fontes do Google e ícones de caixas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxics.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Link para arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho: Inclui logotipo, barra de busca e ícones de navegação -->
+    <header class="menu">
+        <div id="menu-left">
+            <img src="Svg/icon-acessibilidade.png" alt="Acessibilidade" class="icon-access"/>
+            <img src="Svg/Logo Aromas 1.png" alt="Logo AROMAR" id="Logo">
+        </div>
+    
+        <!-- Barra de busca -->
+        <div id="search-bar">
+            <input type="text" id="txtBuscar" placeholder="Buscar..."/>
+            <button id="btnBuscar">
+                <img src="Svg/icone-busca.png" alt="Buscar"/>
+            </button>
+        </div>
+    
+        <!-- Ícones de conta, favoritos e carrinho -->
+        <div id="menu-icons">
+            <div class="icons">
+                <img src="Svg/image 13.png" alt="Favoritos" class="icon"/>
+                <img src="Svg/image 2.png" alt="Carrinho" class="icon"/>
+            </div>
+            <div id="user-account">
+                <a href="#">Olá! Entrar na <br/><ins>Minha conta</ins></a>
+            </div>
+        </div>
+    
+        <!-- Menu de navegação principal -->
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#">LANÇAMENTOS</a></li>
+                <li><a href="#">PRESENTES</a></li>
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">SHAMPOO</a></li>
+                <li><a href="#">GUIA DE BELEZA</a></li>
+                <li><a href="#">MARCAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção do Banner (Carrossel) -->
+    <section class="banner-container">
+        <div class="banner-slide">
+            <!-- Cada "banner-item" contém uma imagem -->
+            <div class="banner-item">
+                <img src="Svg/Icone-slide/sabonete_natural_1.jpg" alt="Sabonete Natural">
+            </div>
+            <div class="banner-item">
+                <img src="Svg/Icone-slide/sabonete_natural_2.jpg" alt="Sabonete Artesanal">
+            </div>
+            <div class="banner-item">
+                <img src="Svg/Icone-slide/sabonete_natural_3.jpg" alt="Sabonete Ecológico">
+            </div>
+        </div>
+        <!-- Botões para navegar pelo carrossel -->
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Seção de Categorias de produtos -->
+    <section class="categories">
+        <div class="category">
+            <img src="Svg/Parte 2/Maquiagem 1.svg" alt="Maquiagem">
+            <p>MAQUIAGEM</p>
+        </div>
+        <div class="category">
+            <img src="Svg/Parte 2/2 1.svg" alt="Shampoo">
+            <p>SHAMPOO</p>
+        </div>
+        <div class="category">
+            <img src="Svg/Parte 2/3 1.svg" alt="Presente">
+            <p>PRESENTE</p>
+        </div>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section class="offers">
+        <div class="offer">
+            <img src="Svg/Parte 2/Parte 2.2/1.png" alt="Frete Grátis">
+        </div>
+        <div class="offer">
+            <img src="Svg/Parte 2/Parte 2.2/3.png" alt="Típicos do Maranhão">
+        </div>
+        <div class="offer">
+            <img src="Svg/Parte 2/Parte 2.2/2.png" alt="Pague com Pix">
+        </div>
+    </section>
+
+    <!-- Seção de Produtos (especificamente do Maranhão) -->
+    <section class="maranhao-selection">
+        <h2>UMA SELEÇÃO ESPECIAL DO MARANHÃO!</h2>
+        <div class="products">
+            <!-- Cada produto é apresentado dentro de um cartão -->
+            <div class="product-card">
+                <img src="Svg/Parte 2/Parte 2.2/Home - AROMAr (3)/6261-77d77fbf424891b7a516500656476545-1024-1024 1.png" alt="Shampoo fortalecedor - Açaí">
+                <h3>Shampoo fortalecedor - Açaí</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">
+                    <span class="old-price">120,00R$</span>
+                    <span class="new-price">37,90R$</span>
+                </div>
+                <button class="add-to-cart">🛒 Add</button>
+                <p>5x de 5,90</p>
+                <small>Obs: Do produto</small>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <img src="Svg/Parte 2/Parte 2.2/Home - AROMAr (3)/7c2a9d3bf7804b2f508586c7a139e2e4awsaccesskeyidakiatclmsgfx4j7tu445expires1702207146signaturetr3xhgpawlojlt7cenasrtzmzcg3d-dc286e76d280f41d1716996151673371-1024-1024 1.png" alt="Kit shampoo e condicionador - Cupuaçu">
+                <h3>Kit shampoo e condicionador - Cupuaçu</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">
+                    <span class="old-price">120,00R$</span>
+                    <span class="new-price">37,90R$</span>
+                </div>
+                <button class="add-to-cart">🛒 Add</button>
+                <p>5x de 5,90</p>
+                <small>Obs: Do produto</small>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <img src="Svg/Parte 2/Parte 2.2/Home - AROMAr (3)/shampoo-solido-relaxar-4_800x 2.png" alt="Condicionador anti-friz - Alecrim">
+                <h3>Condicionador anti-friz - Alecrim</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">
+                    <span class="old-price">120,00R$</span>
+                    <span class="new-price">37,90R$</span>
+                </div>
+                <button class="add-to-cart">🛒 Add</button>
+                <p>5x de 5,90</p>
+                <small>Obs: Do produto</small>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Coluna Sobre -->
+            <div class="footer-section">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Consumidor.gov</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Entregas</a></li>
+                    <li><a href="#">Carga Tributária</a></li>
+                </ul>
+            </div>
+    
+            <!-- Coluna Departamentos -->
+            <div class="footer-section">
+                <h4>DEPARTAMENTOS</h4>
+                <ul>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Presentes</a></li>
+                    <li><a href="#">Cabelos</a></li>
+                    <li><a href="#">Shampoo</a></li>
+                    <li><a href="#">Maquiagem</a></li>
+                </ul>
+            </div>
+    
+            <!-- Coluna Institucional -->
+            <div class="footer-section">
+                <h4>INSTITUCIONAL</h4>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Aromar, Seu Brilho é Único!</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Dúvidas</a></li>
+                </ul>
+            </div>
+    
+            <!-- Coluna Newsletter -->
+            <div class="footer-section newsletter">
+                <h4>Aceita receber ofertas e conteúdos exclusivos? Enviar-se!</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Digite o Seu E-mail">
+                    <button>Enviar</button>
+                </div>
+                <p class="privacy-text">Ao se cadastrar, você concorda em receber comunicações nos termos da nossa Política de Privacidade.</p>
+            </div>
+        </div>
+    
+        <!-- Linha separadora -->
+        <div class="footer-separator"></div>
+    
+        <div class="footer-info">
+            <!-- Pagamento -->
+            <div class="footer-payment">
+                <h4>Pagamento</h4>
+                <img src="Svg/Footer - img/Bandeira -png.png" alt="Ícones de Pagamento">
+                <p>Até 10x sem juros no cartão. Confira as regras.</p>
+            </div>
+    
+            <!-- Segurança -->
+            <div class="footer-security">
+                <h4>Segurança</h4>
+                <img src="Svg/Footer - img/png-seguranca do site.png" alt="Ícones de Segurança">
+            </div>
+    
+            <!-- Sustentabilidade -->
+            <div class="footer-sustainability">
+                <h4>Sustentabilidade</h4>
+                <img src="Svg/Footer - img/Cruellt free.png" alt="Cruelty Free">
+            </div>
+    
+            <!-- Confiança -->
+            <div class="footer-trust">
+                <h4>Pode Confiar</h4>
+                <img src="Svg/Footer - img/Logo Aromas 2.png" alt="Logo Aromar">
+            </div>
+        </div>
+    
+        <!-- Texto final -->
+        <div class="footer-bottom">
+            <p>Os preços da loja online podem variar em relação às lojas físicas e venda direta.</p>
+            <p>AROMAR PRODUTOS COSMÉTICO LTDA.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Importando script JS para controlar a navegação do banner -->
+    <script src="script.js"></script>
+
+</body>
+</html>
